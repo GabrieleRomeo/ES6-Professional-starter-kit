@@ -4,7 +4,7 @@
   "description": "A pre-configured starter kit bundle to speed-up your development with ES6",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "format": "./node_modules/.bin/prettier --config .prettierrc --write \"src/**/*.js\""
   },
   "repository": {
     "type": "git",
@@ -29,8 +29,10 @@
   "homepage": "https://github.com/GabrieleRomeo/ES6-starter-kit#readme",
   "devDependencies": {
     "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.1",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.0",
+    "prettier": "^1.7.4",
     "webpack": "^3.7.1"
   }
 }
