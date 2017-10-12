@@ -28,6 +28,9 @@
   },
   "homepage": "https://github.com/GabrieleRomeo/ES6-starter-kit#readme",
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
     "webpack": "^3.7.1"
   }
 }
