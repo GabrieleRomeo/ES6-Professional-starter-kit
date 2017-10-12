@@ -26,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/GabrieleRomeo/ES6-starter-kit/issues"
   },
-  "homepage": "https://github.com/GabrieleRomeo/ES6-starter-kit#readme"
+  "homepage": "https://github.com/GabrieleRomeo/ES6-starter-kit#readme",
+  "devDependencies": {
+    "webpack": "^3.7.1"
+  }
 }
