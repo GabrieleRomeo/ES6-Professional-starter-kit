@@ -5,7 +5,13 @@
         "browsers": "last 2 versions"
       },
       "loose": true,
-      "modules": false
+      "modules": false,
     }]
-  ]
+  ],
+  "plugins": ["syntax-dynamic-import"],
+  "env": {
+    "test": {
+      "plugins": ["transform-es2015-modules-commonjs"]
+    }
+  }
 }

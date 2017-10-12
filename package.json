@@ -1,15 +1,15 @@
 {
   "name": "es6-starter-kit",
   "version": "1.0.0",
-  "description":
-    "A pre-configured starter kit bundle to speed-up your development with ES6",
+  "description": "A pre-configured starter kit bundle to speed-up your development with ES6",
   "main": "index.js",
   "scripts": {
-    "format":
-      "./node_modules/.bin/prettier --config .prettierrc --write \"src/**/*.js\"",
+    "format": "./node_modules/.bin/prettier --config .prettierrc --write \"src/**/*.js\"",
     "lint": "./node_modules/.bin/eslint src"
   },
-  "pre-commit": ["lint"],
+  "pre-commit": [
+    "lint"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/GabrieleRomeo/ES6-starter-kit.git"
@@ -34,7 +34,9 @@
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.0.1",
+    "babel-jest": "^21.2.0",
     "babel-loader": "^7.1.2",
+    "babel-plugin-dynamic-import-node": "^1.1.0",
     "babel-preset-env": "^1.6.0",
     "eslint": "^4.8.0",
     "eslint-config-airbnb": "^16.0.0",
@@ -43,6 +45,7 @@
     "eslint-plugin-jsx-a11y": "^6.0.2",
     "eslint-plugin-prettier": "^2.3.1",
     "eslint-plugin-react": "^7.4.0",
+    "jest": "^21.2.1",
     "pre-commit": "^1.2.2",
     "prettier": "^1.7.4",
     "webpack": "^3.7.1"
