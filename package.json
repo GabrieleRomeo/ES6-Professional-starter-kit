@@ -1,8 +1,7 @@
 {
   "name": "es6-starter-kit",
   "version": "1.0.0",
-  "description":
-    "A pre-configured starter kit bundle to speed-up your development with ES6",
+  "description": "A pre-configured starter kit bundle to speed-up your development with ES6",
   "main": "index.js",
   "scripts": {
     "build": "NODE_ENV=production webpack -p",
@@ -16,7 +15,9 @@
     "test:update": "jest -u",
     "watch": "webpack --watch"
   },
-  "pre-commit": ["lint"],
+  "pre-commit": [
+    "lint"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/GabrieleRomeo/ES6-starter-kit.git"
@@ -45,6 +46,7 @@
     "babel-loader": "^7.1.2",
     "babel-plugin-dynamic-import-node": "^1.1.0",
     "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-2": "^6.24.1",
     "eslint": "^4.8.0",
     "eslint-config-airbnb": "^16.0.0",
     "eslint-config-prettier": "^2.6.0",

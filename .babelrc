@@ -6,7 +6,8 @@
       },
       "loose": true,
       "modules": false,
-    }]
+    }],
+    "stage-2"
   ],
   "plugins": ["syntax-dynamic-import"],
   "env": {
