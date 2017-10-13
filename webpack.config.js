@@ -1,6 +1,8 @@
 const path = require('path');
 
-module.exports = {
+const isProduction = process.env.NODE_ENV === 'production';
+
+const config = {
   context: __dirname,
   entry: './src/index.js',
   devtool: 'cheap-eval-source-map',
@@ -9,7 +11,7 @@ module.exports = {
     filename: 'bundle.js',
   },
   resolve: {
-    extensions: ['.js', 'jsx', '.json'],
+    extensions: ['.js', '.json'],
   },
   stats: {
     colors: true,
@@ -19,9 +21,21 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.jsx?$/,
+        enforce: 'pre',
+        test: /\.js$/,
+        loader: 'eslint-loader',
+        exclude: /node_modules/,
+      },
+      {
+        test: /\.js$/,
         loader: 'babel-loader',
       },
     ],
   },
 };
+
+if (isProduction === true) {
+  config.devtool = false;
+}
+
+module.exports = config;
