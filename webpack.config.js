@@ -9,7 +9,7 @@ module.exports = {
     filename: 'bundle.js',
   },
   resolve: {
-    extensions: ['.js', '.json'],
+    extensions: ['.js', 'jsx', '.json'],
   },
   stats: {
     colors: true,
@@ -19,7 +19,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.jsx?$/,
         loader: 'babel-loader',
       },
     ],
