@@ -1,10 +1,11 @@
 {
   "name": "es6-starter-kit",
   "version": "1.0.0",
-  "description":
-    "A pre-configured starter kit bundle to speed-up your development with ES6",
+  "description": "A pre-configured starter kit bundle to speed-up your development with ES6",
   "main": "index.js",
   "scripts": {
+    "build": "NODE_ENV=production webpack -p",
+    "build:dev": "webpack -d",
     "format": "prettier --config .prettierrc --write \"src/**/*.js\"",
     "lint": "eslint src",
     "test": "jest",
@@ -13,7 +14,9 @@
     "test:update": "jest -u",
     "watch": "webpack --watch"
   },
-  "pre-commit": ["lint"],
+  "pre-commit": [
+    "lint"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/GabrieleRomeo/ES6-starter-kit.git"
@@ -45,6 +48,7 @@
     "eslint": "^4.8.0",
     "eslint-config-airbnb": "^16.0.0",
     "eslint-config-prettier": "^2.6.0",
+    "eslint-loader": "^1.9.0",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-jsx-a11y": "^6.0.2",
     "eslint-plugin-prettier": "^2.3.1",
