@@ -8,7 +8,7 @@
     "includePattern": ".js$",
     "excludePattern": "(node_modules/|docs)"
   },
-  "plugins": ["plugins/markdown", "__lib__/typeSignature"],
+  "plugins": ["plugins/markdown", "__jsDoc__/typeSignature"],
   "opts": {
     "template": "node_modules/minami",
     "encoding": "utf8",
