@@ -1,0 +1,111 @@
+body {
+  border: 0;
+  margin: 0;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 16px;
+  line-height: 2.8em;
+}
+pre {
+  display: block;
+  padding: 11.5px;
+  margin: 12px 0;
+  font-size: 1rem;
+  line-height: 1.42857143;
+  word-break: break-all;
+  word-wrap: break-word;
+  color: rgb(51, 51, 51);
+  background-color: rgb(245, 245, 245);
+  border-radius: 4px;
+}
+code {
+  padding: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(27, 31, 35, 0.05);
+  border-radius: 3px;
+}
+pre,
+code {
+  font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.command {
+  color: #9f3;
+  background-color: #000;
+}
+
+.command:before {
+  content: '$ ';
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 200px;
+  background-color: rgb(255, 235, 59);
+}
+.header h1 {
+  font-size: 3rem;
+}
+
+.superTitle {
+  margin-bottom: 0;
+}
+
+.subTitle {
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.superTitle,
+.feature__title {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.feature {
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.feature__reference:before {
+  content: 'More about ';
+}
+
+.feature__reference {
+  display: inline-block;
+  margin: 10px;
+}
+
+.feature--azure {
+  background-color: rgb(240, 248, 255);
+}
+
+.feature__title:before {
+  content: '~ ';
+  color: green;
+}
+
+.feature__name {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.feature__title {
+  text-align: center;
+  font-variant-caps: petite-caps;
+}
+
+.features__title {
+}
+
+.features__item {
+  margin: 50px 0;
+}
+
+.main {
+  margin: 50px auto;
+  width: 80%;
+  font-size: 1.2em;
+}
