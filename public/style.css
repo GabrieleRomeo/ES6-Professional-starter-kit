@@ -3,7 +3,7 @@ body {
   margin: 0;
   font-family: 'Libre Baskerville', serif;
   font-size: 16px;
-  line-height: 2.8em;
+  line-height: 2.5em;
 }
 pre {
   display: block;
@@ -27,6 +27,14 @@ code {
 pre,
 code {
   font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+a {
+  color: blue;
+}
+
+ul {
+  margin-bottom: 1em;
 }
 
 .command {
@@ -55,9 +63,10 @@ code {
 }
 
 .subTitle {
-  font-size: 1em;
+  font-size: 0.8em;
   text-transform: uppercase;
   font-weight: 300;
+  border-top: 1px solid rgb(0, 0, 0);
 }
 
 .superTitle,
@@ -84,12 +93,14 @@ code {
 }
 
 .feature__title:before {
-  content: '~ ';
+  content: '\02618 ';
+  margin-right: 10px;
   color: green;
 }
 
 .feature__name {
   font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
 }
 
 .feature__title {
@@ -98,14 +109,24 @@ code {
 }
 
 .features__title {
+  letter-spacing: 0.8px;
+  font-style: oblique;
 }
 
 .features__item {
   margin: 50px 0;
 }
 
+.main,
+footer {
+  width: 80%;
+}
+
 .main {
   margin: 50px auto;
-  width: 80%;
-  font-size: 1.2em;
+  font-size: 1.1em;
+}
+
+footer {
+  margin: 10px auto;
 }
