@@ -74,13 +74,9 @@ Goto [http://localhost:8080](http://localhost:8080)
 
 ### Build
 
-The `build` directory will contain the `build.min.js` file, the production version that you will ship.
+The `build` directory will contain the `build.js` and `build.min.js` files. The former will be a production version of your software that you will ship and the latter will be a development version instead.
 
-The `public` directory contains the `build.js` file, the development version of your software. This file is ignored by git.
-
-Check the comments inside the  `webpack.config.js` file to see how you can configure the output of Webpack.
-
- 
+If you want to request your library directly into the browser, check out the comments inside the  `webpack.config.js` file to see how you can configure the Webpack's output to achieve different results. 
 
 For more information about the available features / commands, please visit the [following webpage](gabrieleromeo.github.io/ES6-Professional-starter-kit/)
 
