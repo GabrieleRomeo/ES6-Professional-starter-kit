@@ -12,7 +12,7 @@
   "opts": {
     "template": "node_modules/minami",
     "encoding": "utf8",
-    "destination": "./docs/",
+    "destination": "./__docs__/",
     "recurse": true,
     "verbose": true
   },
