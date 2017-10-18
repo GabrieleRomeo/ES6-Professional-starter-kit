@@ -272,7 +272,7 @@
             <p class="feature__description">
               <a href="https://www.npmjs.com/package/semantic-release"
                  title="semantic-release">
-                Semantic-release
+                Semantic-release + semantic-release-tamia
               </a>
               is a fully automated package publishing System which take trace
               of changes you’ve made through <strong>semantic commits.</strong>
@@ -283,6 +283,31 @@
              Semantic-release understands what you've made (fixed a bug) and it
              will update the software's release accordingly at the next
              <code class="command">git push</code>.
+            </p>
+            <p>
+              To release a new version, you'll need to create a commit
+              with Changelog type. To generate changelog draft run
+              <code class="command">yarn changelog:preview</code> or
+              <code class="command">npm run changelog:preview</code>
+            </p>
+            <p>
+              It will create a file with all important commits for the release
+              grouped by type.
+            </p>
+            <p>
+              To commit changelog
+              <code class="command">yarn changelog:commit</code> or
+              <code class="command">npm run changelog:commit</code>
+            </p>
+            <p>
+              It will make
+              a commit without changes (git commit --allow-empty) of type
+              Changelog and changelog in commit message body.
+            </p>
+            <p>
+              More information about the <a title="semantic-release-tamia"
+              href="https://github.com/tamiadev/semantic-release-tamia">
+            semantic-release-tamia</a> plugin.
             </p>
             <p class="feature__description">
              A commit message consists of a header, body and footer.
@@ -297,7 +322,7 @@
             </p>
             <p class="feature__description">
              To understand how to write semantic commits, use this
-            <a href="https://github.com/conventional-changelog-archived-repos/conventional-changelog-angular/blob/master/convention.md">
+            <a href="https://github.com/tamiadev/semantic-release-tamia/blob/master/Convention.md">
              reference</a> documentation.
             </p>
           </div>
