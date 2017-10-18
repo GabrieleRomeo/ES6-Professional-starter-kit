@@ -1,7 +1,8 @@
 {
   "name": "es6-starter-kit",
   "version": "0.0.0-development",
-  "description": "A pre-configured starter kit bundle to speed-up your development with ES6",
+  "description":
+    "A pre-configured starter kit bundle to speed-up your development with ES6",
   "main": "index.js",
   "scripts": {
     "setup": "npm install",
@@ -19,14 +20,17 @@
     "posttest:coverage": "opn ./coverage/lcov-report/index.html",
     "test:update": "jest -u",
     "watch": "webpack --watch",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "semantic-release":
+      "semantic-release pre && npm publish && semantic-release post"
   },
-  "pre-commit": [
-    "lint"
-  ],
+  "pre-commit": ["lint"],
   "repository": {
     "type": "git",
     "url": "https://github.com/GabrieleRomeo/ES6-starter-kit.git"
+  },
+  "jest": {
+    "verbose": true,
+    "coverageDirectory": "./__coverage__"
   },
   "keywords": [
     "ES6",
