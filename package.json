@@ -21,16 +21,23 @@
     "test:update": "jest -u",
     "watch": "webpack --watch",
     "semantic-release":
-      "semantic-release pre && npm publish && semantic-release post"
+      "semantic-release pre && npm publish && semantic-release post",
+    "changelog:preview": "sr-changelog",
+    "changelog:commit": "sr-changelog commit"
   },
   "pre-commit": ["lint"],
   "repository": {
     "type": "git",
-    "url": "https://github.com/GabrieleRomeo/ES6-starter-kit.git"
+    "url": "https://github.com/GabrieleRomeo/ES6-Professional-starter-kit.git"
   },
   "jest": {
     "verbose": true,
     "coverageDirectory": "./__coverage__"
+  },
+  "release": {
+    "analyzeCommits": "semantic-release-tamia/analyzeCommits",
+    "generateNotes": "semantic-release-tamia/generateNotes",
+    "verifyRelease": "semantic-release-tamia/verifyRelease"
   },
   "keywords": [
     "ES6",
@@ -46,9 +53,11 @@
   "author": "Gabriele Romeo",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/GabrieleRomeo/ES6-starter-kit/issues"
+    "url":
+      "https://github.com/GabrieleRomeo/ES6-Professional-starter-kit/issues"
   },
-  "homepage": "https://github.com/GabrieleRomeo/ES6-starter-kit#readme",
+  "homepage":
+    "https://github.com/GabrieleRomeo/ES6-Professional-starter-kit/#readme",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.0.1",
@@ -75,9 +84,10 @@
     "opn-cli": "^3.1.0",
     "pre-commit": "^1.2.2",
     "prettier": "^1.7.4",
+    "semantic-release": "^8.2.0",
     "semantic-release-cli": "^3.2.2",
+    "semantic-release-tamia": "^1.1.1",
     "webpack": "^3.7.1",
-    "webpack-dev-server": "^2.9.1",
-    "semantic-release": "^8.2.0"
+    "webpack-dev-server": "^2.9.1"
   }
 }

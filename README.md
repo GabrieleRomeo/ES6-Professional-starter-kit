@@ -26,6 +26,7 @@ The main goal of this project is to speed up your development process and mainta
   * [Doxdox](https://doxdox.org/) 
 * Software Release
   * [Semantic-release](https://github.com/semantic-release/semantic-release)
+    * [semantic-release-tamia](https://github.com/tamiadev/semantic-release-tamia)
 
 
 
