@@ -1,7 +1,7 @@
 Professional ES6 Starter Kit
 =====================
 
-[![Latest Documentation](https://doxdox.org/images/badge-flat.svg)](https://doxdox.org/)[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)[![license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
+[![Latest Documentation](https://doxdox.org/images/badge-flat.svg)](https://doxdox.org/) [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release) [![license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
 
 
 
@@ -78,7 +78,7 @@ The `build` directory will contain the `build.js` and `build.min.js` files. The 
 
 If you want to request your library directly into the browser, check out the comments inside the  `webpack.config.js` file to see how you can configure the Webpack's output to achieve different results. 
 
-For more information about the available features / commands, please visit the [following webpage](gabrieleromeo.github.io/ES6-Professional-starter-kit/)
+For more information about the available features / commands, please visit the [following webpage](https://gabrieleromeo.github.io/ES6-Professional-starter-kit/)
 
 
 
