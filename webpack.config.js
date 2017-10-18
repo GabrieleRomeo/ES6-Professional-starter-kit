@@ -8,7 +8,7 @@ const config = {
   entry: path.join(__dirname, 'src/index.js'),
   devtool: 'cheap-eval-source-map',
   output: {
-    path: path.join(__dirname, 'public/'),
+    path: path.join(__dirname, 'build/'),
     filename: `${FILENAME}.js`,
     /*  Output - How to set webpack to expose your library to the browser
         reference - https://webpack.js.org/configuration/output/
@@ -72,7 +72,6 @@ const config = {
 
 if (isProduction === true) {
   config.devtool = false;
-  config.output.path = path.join(__dirname, 'build/');
   config.output.filename = `${FILENAME}.min.js`;
 }
 
