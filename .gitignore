@@ -1,4 +1,4 @@
 node_modules
 __coverage__
 __docs__
-public/bundle.js
+bundle/bundle.js
