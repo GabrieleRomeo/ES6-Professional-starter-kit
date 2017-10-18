@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ES6 Starter Kit</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&family=Libre+Baskerville&Josefin+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="/public/style.css">
+</head>
+<body>
+  <section class="header">
+    <h1 class="superTitle">ES6 Starter Kit &#9732;</h1>
+    <h2 class="subTitle">A professional (fully-featured) development kit</h2>
+  </section>
+  <section class="main">
+    <p>
+      A pre-configured bundle which includes all you need to speed up your
+      development with vanilla Javascript.
+    </p>
+    <p>What does it include?</p>
+    <div class="feature">
+      <h2 class="feature__title">Packaging and Modern Javascript</h2>
+      <ul class="feature__list">
+        <li class="features__item">
+          <h3 class="features__title">Module bundler &#043; Code transpiler</h3>
+          <div class="feature__inner">
+            <h4 class="feature__name">
+              [Webpack 2 &amp;
+              Dev Server] &#043;
+              Babel [Stage 2 preset]
+            </h4>
+            <p class="feature__description">
+              By default, your source code is placed under the <code>/src
+              </code> directory and your builds will be located under the <code>
+              /public</code> directory.
+            </p>
+            <p class="feature__description">
+              The default project's structure is as follows:
+              <pre>
+-  __coverage__ --> Contains tests' coverage reports
+-  __docs__     --> Contains the API documentation
+-  __jsDoc__    --> Private for JSDoc only
+-  __test__     --> Contains all your spec files (testing)
+-  index.html   --> Just an example page
+-  public       --> Contains all the public assets
+-  build        --> Contains the .js production file
+-  src          --> Contains all the source js files
+    |- index.js --> A single entry point for your build system
+              </pre>
+            </p>
+            <p class="feature__description">
+              All the directories starting with <code>__</code> are private and
+              their content could change during your development. For this reason,
+              don't manipulate them or their content manually.
+            </p>
+            <p class="feature__description">
+              Use the following commands to build your software:
+              <ul>
+                <li>
+                  <code  class="command">yarn build</code> or
+                  <code  class="command">npm run build</code> to build the
+                  <strong>production</strong> version of your software.
+                </li>
+                <li>
+                  <code  class="command">yarn build:dev</code> or
+                  <code  class="command">npm run build:dev</code> to build a
+                  <strong>development</strong> version which include a source-map.
+                </li>
+                <li>
+                  <code  class="command">yarn dev</code> or
+                  <code  class="command">npm run dev</code> to compile your code
+                  and start the Development Server
+                </li>
+              </ul>
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="feature feature--azure">
+      <h2 class="feature__title">Code Quality</h2>
+      <ul class="feature__list">
+        <li class="features__item">
+          <h3 class="features__title">Code Formatting</h3>
+          <div class="feature__inner">
+            <h4 class="feature__name">Prettier</h4>
+            <p class="feature__description">
+              Removes all original styling and ensures that all outputted code
+              conforms to a consistent style.
+            </p>
+            <p>
+              Have a look at the <code>.prettierrc</code> config file in the root
+              directory.
+            </p>
+            <p>
+              You can also run <code class="command">yarn format</code> or
+              <code class="command">npm run format</code>
+              from your command line to format all the <code>.js</code> files
+              contained under the <code>/src</code> directory.
+            </p>
+            <p>
+              However, the best way to deal with Prettier is by configuring your
+              favorite
+              <a href="https://github.com/prettier/prettier#editor-integration"
+                 title="Prettier Editor Integration">code editor</a> to apply
+                 format changes on save.
+            </p>
+            <p class="feature__reference">
+              <a href="https://github.com/prettier/prettier" title="prettier">
+                Prettier
+              </a>
+            </p>
+          </div>
+        </li>
+        <li class="features__item">
+          <h3 class="features__title">Javascript Linting</h3>
+          <div class="feature__inner">
+            <h4 class="feature__name">EsLint + Airbnb Styleguide</h4>
+            <p class="feature__description">
+              Eslint runs while you're developing, check the editor's console
+              for errors or install one of the available plugins for your code
+              editor.
+            </p>
+            <p class="feature__description">
+              You can also run Eslint manually with
+              <code  class="command">yarn lint</code> or
+              <code  class="command">npm run lint</code>.
+            </p>
+            <p class="feature__description">
+              Look at the <code>.eslintrc</code> file
+              for configuration (currently, this kit uses
+              the <a href="https://github.com/airbnb/javascript" title="airbnb">
+              airbnb presets</a> in combination with Prettier)
+            </p>
+          </div>
+        </li>
+        <li class="features__item">
+          <h3 class="features__title">Pre-commit</h3>
+          <div class="feature__inner">
+            <p class="feature__description">
+              It ensures that your npm test (or other specified scripts) passes
+              before you can commit your changes.
+            </p>
+          </div>
+        </li>
+        <li class="features__item">
+          <h3 class="features__title">Testing</h3>
+          <div class="feature__inner">
+            <h4 class="feature__name">Jest</h4>
+            <p class="feature__description">
+              Jest is installed end pre-configured. All the test files are
+              located under the <code>__test__</code> directory.
+            </p>
+            <p class="feature__description">
+              Use the following commands to run your tests:
+              <ul>
+                <li>
+                  <code  class="command">yarn test</code> or
+                  <code  class="command">npm run test</code>
+                </li>
+                <li>
+                  <code  class="command">yarn test:coverage</code> or
+                  <code  class="command">npm run test:coverage</code>
+                </li>
+                <li>
+                  <code  class="command">yarn test:update</code> or
+                  <code  class="command">npm run test:update</code>
+                </li>
+              </ul>
+            </p>
+            <p class="feature__description">
+              The <code>test</code> command runs all the tests
+              within your command line.
+            </p>
+            <p class="feature__description">
+              The <code>test:coverage</code> command runs all the tests
+              within your command line and shows a code coverage report. Jest
+              exploits the instanbul coverage report system.
+            </p>
+            <p class="feature__description">
+              The <code>test:update</code> command allows you to take snapshot.
+              With <a href="https://hackernoon.com/snapshot-testing-with-jest-beyond-react-components-7630fd0024c5">
+              snapshots</a> it’s possible to test and assert the output of any
+              serializable value.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="feature">
+      <h2 class="feature__title">Documentation</h2>
+      <ul class="feature__list">
+        <li class="features__item">
+          <h3 class="features__title">Create your API</h3>
+          <div class="feature__inner">
+            <h4 class="feature__name">JsDoc 3 &#043; Doxdox</h4>
+            <p class="feature__description">
+              <a href="http://jsdoc.org/" title="JSDoc">JSDoc 3</a>
+              is an API documentation generator for JavaScript, similar
+              to Javadoc or phpDocumentor. You add documentation comments
+              directly to your source code, right alongside the code itself.
+              The JSDoc tool will scan your source code and generate an HTML
+              documentation website for you.
+            </p>
+            <p class="feature__description">
+              Pre-installed templates:
+              <ul>
+                <li>Minami - (Default)</li>
+                <li>Boxy</li>
+              </ul>
+              Look at the <code>.jsdocrc</code> file for configuration.<br>
+              Under the <code>opts</code> section, you can switch theme by
+              changing the <code>template</code> property:
+              <pre>"template": "node_modules/minami"</pre>
+              or
+              <pre>"template": "node_modules/boxy-jsdoc-template"</pre>
+            </p>
+            <p class="feature__description">
+              Type <code class="command">yarn docs</code> or
+              <code class="command">npm run docs</code> to generate the API for
+              your Team.
+            </p>
+            <p class="feature__description">
+              Type <code class="command">yarn docs:open</code> or
+              <code class="command">npm run docs:open</code> to open the
+              API webpage
+            </p>
+            <p class="feature__description">
+              Additional JSDoc's plugin
+              <ul>
+                <li>typeSignature</li>
+              </ul>
+              typeSignature is a custom JSDoc plugin which allows you to define
+              the type signature of a function. <a href="https://hackernoon.com/function-type-signatures-in-javascript-5c698c1e9801">Type Signature</a>
+              is used to define the inputs and outputs for a function and is
+              particulary useful with Functional Programming.<br>
+              Inside a JSDoc block use the
+              <code>@signature</code> directive.
+            </p>
+            <p class="feature__description">
+              For example:
+              <pre>@signature add :: (Number, Number) -> Number</pre>
+            </p>
+            <p class="feature__description">
+              This will generate an additional block in your API like:
+            </p>
+            <p class="feature__description">
+              <img src="/public/typeSignature.png"
+                   height="120px"
+                   alt="Type Signature">
+            </p>
+            <p class="feature__description">
+              <a href="http://doxdox.org/" title="doxdox">Doxdox</a>
+              is a documentation generator that converts
+              JSDoc comment blocks into easy to read Bootstrap and Markdown
+              documentation files. <strong>ES6 Starter Kit</strong> comes with
+              doxdox pre-configured in such a way to exploit JSDocs comments
+              to generate the GitHub Wiki automatically. After you ran one of
+              the previous generator commands, the System will
+              generate the <code>wiki.zip</code> file for you.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="feature">
+      <h2 class="feature__title">Software Versioning</h2>
+      <ul class="feature__list">
+        <li class="features__item">
+          <h3 class="features__title">Automatic Releases</h3>
+          <div class="feature__inner">
+            <h4 class="feature__name">Semantic-release</h4>
+            <p class="feature__description">
+              <a href="https://www.npmjs.com/package/semantic-release"
+                 title="semantic-release">
+                Semantic-release
+              </a>
+              is a fully automated package publishing System which take trace
+              of changes you’ve made through <strong>semantic commits.</strong>
+            </p>
+            <p class="feature__description">
+             For example, if you write a commit in the following way:
+             <pre>git commit -m "fix: &lt;message&gt;"</pre>
+             Semantic-release understands what you've made (fixed a bug) and it
+             will update the software's release accordingly at the next
+             <code class="command">git push</code>.
+            </p>
+            <p class="feature__description">
+             A commit message consists of a header, body and footer.
+             The header has a type, scope and subject:
+             <pre>
+&lt;type&gt;(&lt;scope&gt;): &lt;subject&gt;
+&lt;BLANK LINE&gt;
+&lt;body&gt;
+&lt;BLANK LINE&gt;
+&lt;footer&gt;
+            </pre>
+            </p>
+            <p class="feature__description">
+             To understand how to write semantic commits, use this
+            <a href="https://github.com/conventional-changelog-archived-repos/conventional-changelog-angular/blob/master/convention.md">
+             reference</a> documentation.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <footer>
+    MIT License &copy; <a href="https://github.com/GabrieleRomeo/ES6-starter-kit" title="Github Repository">Gabriele Romeo</a>
+  </footer>
+  <script src="/build/bundle.min.js"></script>
+</body>
+</html>
