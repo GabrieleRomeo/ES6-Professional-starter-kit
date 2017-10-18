@@ -109,6 +109,7 @@ ul {
 }
 
 .features__title {
+  color: rgb(237, 20, 61);
   letter-spacing: 0.8px;
   font-style: oblique;
 }
