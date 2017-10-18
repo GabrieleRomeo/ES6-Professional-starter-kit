@@ -10,6 +10,38 @@ const config = {
   output: {
     path: path.join(__dirname, 'public/'),
     filename: `${FILENAME}.js`,
+    /*  Output - How to set webpack to expose your library to the browser
+        reference - https://webpack.js.org/configuration/output/
+
+      ~~~~   AMD - require.js ~~~~~~
+      Uncomment the following properties
+    */
+    // library: 'LibraryName',
+    // libraryTarget: 'amd',
+    /*
+      Then add Require.js and the bundle script to your webpage
+      <script src="path-to/require.js"></script>
+      <script src="dist/bundle.min.js"></script>
+      Use your library like
+
+      require(['LibraryName'], function(myLibrary) {
+        // Do something with the library...
+        console.log(myLibrary.add(2, 2));
+      });
+
+      ~~~~   UMD ~~~~~
+      Uncomment the following properties
+    */
+    // library: 'LibraryName',
+    // libraryTarget: 'umd',
+    // umdNamedDefine: true,
+    /*
+      Then add the bundle script to your webpage and use it
+      <script src="dist/bundle.min.js"></script>
+      <script>
+        console.log(LibraryName.add(2, 2));
+      </script>
+    */
   },
   devServer: {
     publicPath: '/public/',
