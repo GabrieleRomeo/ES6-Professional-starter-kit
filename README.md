@@ -5,11 +5,11 @@ Professional ES6 Starter Kit
 
 This repository provides a full development & build workflow for your next **vanilla ES6 Javascript** project.
 
-The primary goal of this project is to allow a rapid kick-start your development process by trying to avoid the tedious task of installing tons of libraries along with the following configurations. Moreover, it helps to maintain a professional workflow.
+The primary goal of this project is to allow a rapid kick-start of your development process by trying to avoid the tedious task of installing tons of libraries along with the following configurations. Moreover, it helps to maintain a professional workflow during development.
 
 
 
-The default assets under the `src` , `public` folders are to be considered as examples file.
+**Note**: Default assets as the `src` , `public`, and `__test__`  folders are to be considered as examples.
 
 
 
@@ -86,7 +86,7 @@ Run `yarn dev` or `npm run dev`
 
 ### Documentation
 
-JSDoc allows to use a markdown file as the home of your API. By default, the system uses the `home_manifest.md` file under the `__jsDoc__` dir as to generate the example.
+JSDoc allows us to use a markdown file as the home of the API. By default, the system uses the `home_manifest.md` file under the `__jsDoc__` directory as template.
 
 
 
@@ -94,9 +94,9 @@ JSDoc allows to use a markdown file as the home of your API. By default, the sys
 
 To release a new version, you'll need to create a commit with `Changelog` type. 
 
-To generate changelog draft run `npm run changelog:preview`.
+To generate changelog draft run `npm run changelog:preview` or  `yarn changelog:preview` .
 
-To commit changelog run `npm run changelog:commit`.
+To commit changelog run `npm run changelog:commit` or  `yarn changelog:commit`.
 
 More info [here](https://github.com/tamiadev/semantic-release-tamia)
 
