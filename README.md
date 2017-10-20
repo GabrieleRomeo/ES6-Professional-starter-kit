@@ -3,15 +3,19 @@ Professional ES6 Starter Kit
 
 [![Latest Documentation](https://doxdox.org/images/badge-flat.svg)](https://doxdox.org/) [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release) [![license](https://img.shields.io/github/license/mashape/apistatus.svg)]() [![Build Status](https://travis-ci.org/GabrieleRomeo/ES6-Professional-starter-kit.svg?branch=master)](https://travis-ci.org/GabrieleRomeo/ES6-Professional-starter-kit)
 
-A complete **ES6 Starter Kit** with full development & build workflow for your next **vanilla Javascript** project.
+This repository provides a full development & build workflow for your next **vanilla ES6 Javascript** project.
 
-The main goal of this project is to speed up your development process and maintain a professional level workflow.
+The primary goal of this project is to allow a rapid kick-start your development process by trying to avoid the tedious task of installing tons of libraries along with the following configurations. Moreover, it helps to maintain a professional workflow.
+
+
+
+The default assets under the `src` , `public` folders are to be considered as examples file.
 
 
 
 **What does it include**?
 
-* Development / Build / Linting tasks
+* Development / Build tasks
 * [Webpack 2.0](https://webpack.github.io/) module bundler
 * [Babel](https://babeljs.io/) transpiler
 * Code Quality
@@ -28,6 +32,7 @@ The main goal of this project is to speed up your development process and mainta
 
 
 
+
 ### Install
 
 ```shell
@@ -37,47 +42,73 @@ cd ES6-Professional-starter-kit
 
 
 
-Update the project's information inside the `package.json` 
+Update the project's information inside the `package.json` file and, if necessary, [clear out](https://gist.github.com/stephenhardy/5470814) the git history of the original repo.
 
 
 
 After that, you can start fresh with `semantic-release` by invoking the `setup` task, like this:
 
-```shell
-yarn setup
-// or
-npm run setp
-```
 
- Otherwise you can run the dependencies installation manually:
 
-```shell
-yarn
-// or
-npm install
-```
+Run `yarn setup` or `npm run setup` 
 
 
 
-### Run in development mode
+You may also run dependencies installation manually with:
 
-```shell
-yarn dev
-// or
-npm run dev
-```
+Run `yarn` or `npm install` 
 
-Goto [http://localhost:8080](http://localhost:8080)
+
 
 
 
 ### Build
 
+By default the `src/index.js` file acts as a single point of access for the build system.
+
 The `build` directory will contain the `build.js` and `build.min.js` files. The former will be a production version of your software that you will ship and the latter will be a development version instead.
 
-If you want to request your library directly into the browser, check out the comments inside the  `webpack.config.js` file to see how you can configure the Webpack's output to achieve different results. 
+
+
+Check out the comments inside the  `webpack.config.js` file If you want to use your library directly into the browser.
+
+
+
+
+
+### Development Environment
+
+Run `yarn dev` or `npm run dev` 
+
+ It will open the `index.html` page within your favourite browser. 
+
+
+
+### Documentation
+
+JSDoc allows to use a markdown file as the home of your API. By default, the system uses the `home_manifest.md` file under the `__jsDoc__` dir as to generate the example.
+
+
+
+### Semantic Release
+
+To release a new version, you'll need to create a commit with `Changelog` type. 
+
+To generate changelog draft run `npm run changelog:preview`.
+
+To commit changelog run `npm run changelog:commit`.
+
+More info [here](https://github.com/tamiadev/semantic-release-tamia)
+
+
+
+----
+
+
 
 For more information about the available features / commands, please visit the [following webpage](https://gabrieleromeo.github.io/ES6-Professional-starter-kit/)
+
+
 
 
 
