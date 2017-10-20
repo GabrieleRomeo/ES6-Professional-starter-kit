@@ -1,5 +1,4 @@
 node_modules
-__test__
 __coverage__
 __docs__
 bundle/bundle.js
