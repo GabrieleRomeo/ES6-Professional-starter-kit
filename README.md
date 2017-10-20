@@ -1,7 +1,7 @@
 Professional ES6 Starter Kit
 =====================
 
-[![Latest Documentation](https://doxdox.org/images/badge-flat.svg)](https://doxdox.org/) [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release) [![license](https://img.shields.io/github/license/mashape/apistatus.svg)]()[![Build Status](https://travis-ci.org/GabrieleRomeo/ES6-Professional-starter-kit.svg?branch=master)](https://travis-ci.org/GabrieleRomeo/ES6-Professional-starter-kit)
+[![Latest Documentation](https://doxdox.org/images/badge-flat.svg)](https://doxdox.org/) [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release) [![license](https://img.shields.io/github/license/mashape/apistatus.svg)]() [![Build Status](https://travis-ci.org/GabrieleRomeo/ES6-Professional-starter-kit.svg?branch=master)](https://travis-ci.org/GabrieleRomeo/ES6-Professional-starter-kit)
 
 A complete **ES6 Starter Kit** with full development & build workflow for your next **vanilla Javascript** project.
 
